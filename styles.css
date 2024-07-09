@@ -1,0 +1,22 @@
+#main-content {
+    transition: margin-left 10s ease;
+}
+
+#main-content.shifted {
+    margin-left: 450px; /* Ajusta este valor según el ancho del offcanvas */
+}
+
+#product-list {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.product-item {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-item:last-child {
+    border-bottom: none;
+}

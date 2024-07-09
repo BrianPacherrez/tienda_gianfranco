@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="/categorias/style.css">
+    <title>Sidebar</title>
+</head>
+<body>
+    <div class="menu">
+        <ion-icon name="menu-outline"></ion-icon>
+        <ion-icon name="close-outline"></ion-icon>
+    </div>
+
+    <div class="barra-lateral">
+        <div>
+            <div class="nombre-pagina">
+                <ion-icon id="cloud" name="cloud-outline"></ion-icon>
+                <span>categorias</span>
+            </div>
+            <button class="boton">
+                <ion-icon name="add-outline"></ion-icon>
+                <span>Create new</span>
+            </button>
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <li>
+                    <a id="inbox" href="/index.php">
+                        <ion-icon name="mail-unread-outline"></ion-icon>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <span>Starred</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="paper-plane-outline"></ion-icon>
+                        <span>Sent</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="document-text-outline"></ion-icon>
+                        <span>Drafts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="bookmark-outline"></ion-icon>
+                        <span>Important</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="alert-circle-outline"></ion-icon>
+                        <span>Spam</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <ion-icon name="trash-outline"></ion-icon>
+                        <span>Trash</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div>
+            <div class="linea"></div>
+
+            <div class="modo-oscuro">
+                <div class="info">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <span>Drak Mode</span>
+                </div>
+                <div class="switch">
+                    <div class="base">
+                        <div class="circulo">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="usuario">
+                <img src="/categorias/Jhampier.jpg" alt="">
+                <div class="info-usuario">
+                    <div class="nombre-email">
+                        <span class="nombre">Jhampier</span>
+                        <span class="email">jhampier@gmail.com</span>
+                    </div>
+                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+        <h1>Categorias</h1>
+        <div class="wrapper">
+            <div id="search-container">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Busque el nombre del producto aquí.."
+                />
+                <button id="search">Search</button>
+            </div>
+            <div id="buttons">
+                <button class="button-value">Todos</button>
+
+                <button class="button-value">Alimentos básicos</button>
+
+                <button class="button-value">Bebidas</button>
+
+                <button class="button-value">Snacks y golosinas</button>
+
+                <button class="button-value">Limpieza</button>
+
+                <button class="button-value">Cuidado personal</button>
+            </div>
+        </div>
+
+
+        <div class="container-items">
+            <div class="item">
+                <figure>
+                    <img
+                    src="/img/productos_catálogo/Don_Vittorio.png"
+                    alt="producto"
+                    />
+                </figure>
+    
+                <div class="info-product">
+                    <h2>Fideos Don Vittorio 950 g</h2>
+                    <p class="price">S/.6.00</p>
+                    <button class="boton-producto">Añadir al carrito</button>
+                </div>
+            </div>
+    
+            <div class="item">
+                <figure>
+                    <img
+                    src="/img/productos_catálogo/Detergente_ariel.png"
+                    alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Detergente Líquido Ariel</h2>
+                    <p class="price">S/.24.00</p>
+                    <button class="boton-producto">Añadir al carrito</button>
+                </div>
+            </div>
+    
+            <div class="item">
+                <figure>
+                    <img
+                    src="/img/productos_catálogo/Shampoo_Head & Shoulders.png"
+                    alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Shampoo Head & Shoulders 375 mL</h2>
+                    <p class="price">S/.16.50</p>
+                    <button class="boton-producto">Añadir al carrito</button>
+                </div>
+            </div>
+    
+            <div class="item">
+                <figure>
+                    <img
+                    src="/img/productos_catálogo/Atun_florida.png"
+                    alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Trozos Atún Florida 140 g</h2>
+                    <p class="price">S/.5.00</p>
+                    <button class="boton-producto">Añadir al carrito</button>
+                </div>
+            </div>
+    
+            <div class="item">
+                <figure>
+                    <img
+                    src="/img/productos_catálogo/Arroz_costeño.png"
+                    alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Arroz Extra Costeño 5 kg</h2>
+                    <p class="price">S/.26.50</p>
+                    <button class="boton-producto">Añadir al carrito</button>
+                </div>
+            </div>
+    
+            <div class="item">
+                <figure>
+                    <img
+                    src="/img/productos_catálogo/Yogurt_gloria.png"
+                    alt="producto"
+                    />
+                </figure>
+                <div class="info-product">
+                    <h2>Yogurt Gloria de Fresa 1.7 kg</h2>
+                    <p class="price">S/.8.50</p>
+                    <button class="boton-producto">Añadir al carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="/categorias/script.js"></script>
+</body>
+</html>

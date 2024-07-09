@@ -1,0 +1,327 @@
+html {
+    height: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: white;
+    max-width: 1200px;
+    background: linear-gradient(#ffffff, #37c08b);
+    margin: 0 auto;
+    background-attachment: fixed; /* Fija el fondo para que no se mueva con el desplazamiento */
+    background-size: cover; /* Hace que el fondo degradado cubra todo el área visible */
+}
+
+/* Menú de Navegación */
+header {
+    position: relative;
+    width: 100%;
+    min-width: 900px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to right, #380036, #0cbaba);
+    font-weight: bolder;
+    margin-top: 20px;
+}
+
+/* Logo Texto*/
+.logo {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+/* Navegador */
+.ul_contador {
+    right: 0;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.ul_contador li {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: all 0.3s ease;
+    color: white;
+    position: relative;
+}
+
+.ul_contador li .icono {
+    color: white;
+    text-decoration: none;
+}
+
+.ul_contador li:hover {
+    background-image: linear-gradient(to right, #00bcd4, #2196f3);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.ul-segundo {
+    position: absolute;
+    display: none;
+    transform: translateY(20px);
+    z-index: 1;
+    background-color: rgba(106, 90, 205, .9);
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.ul-segundo li {
+    border-bottom: solid 1px white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.ul-segundo li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.ul-segundo li:hover {
+    background-image: linear-gradient(to right, #00bcd4, #2196f3);
+}
+
+.iniciar-sesion:hover .ul-segundo {
+    display: block;
+}
+
+
+/* Iconos */
+.icono-nav {
+    font-size: 30px;
+    color: white;
+    vertical-align: middle;
+}
+
+/* Panel */
+.carousel {
+    margin-top: 20px;
+}
+
+
+/* Contenedor Categorias */
+.titulo-categorias {
+    color: gray;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 15px;
+    font-family: "Trocchi", serif;
+}
+
+.contenedor-categorias {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 15px 30px;
+}
+
+.contenedor-categorias img{
+    border-radius: 10px;
+}
+
+.info-categoria {
+    text-align: center;
+    color: #003049;
+}
+
+
+/* Productos */
+.icon-cart {
+    width: 40px;
+    height: 40px;
+    stroke: #000;
+}
+
+.icon-cart:hover {
+    cursor: pointer;
+}
+
+img{ 
+    max-width: 100%;
+}
+
+.container-items {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
+
+.item-categoria img {
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item-categoria:hover img {
+    transform: scale(1.2);
+}
+
+
+/* Main */
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.item {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .5);
+}
+
+.item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.item figure {
+    overflow: hidden;
+}
+
+.item:hover img {
+    transform: scale(1.2);
+}
+
+.info-product {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.info-product .boton-producto {
+    border: none;
+    background: none;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    transition: all 2.2s
+}
+
+.boton-producto:hover {
+    background-color: rgb(18, 92, 92);
+}
+
+/* Pie de página */
+.contenedor-pie-pagina {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #308b69;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+
+.contenedor-pie-pagina .grupo-1 .box figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-pie-pagina .grupo-1 .box img {
+    width: 250px;
+}
+
+.contenedor-pie-pagina .grupo-1 .box h2 {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.contenedor-pie-pagina .grupo-1 .box p {
+    margin-bottom: 10px;
+}
+
+.contacto a {
+    text-decoration: none;
+    color: white;
+}
+
+.icono-footer {
+    font-size: 30px;
+    color: white;
+    vertical-align: middle;
+}
+
+.grupo-2 {
+    background-color: #21644c;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+}
+
+.grupo-2 small {
+    font-size: 13px;
+}
+
+#exampleModalLabel {
+    color: #000;
+}
+
+.logo-carrito {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde el borde inferior */
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.logo-carrito a {
+    text-decoration: none;
+    color: black; /* Color del icono */
+    position: relative; /* Importante para posicionar el contador */
+}
+
+#cart-count {
+    position: absolute;
+    top: -5px; /* Ajusta la posición verticalmente */
+    right: -5px; /* Ajusta la posición horizontalmente */
+    background-color: red; /* Color de fondo del círculo */
+    color: white; /* Color del texto del contador */
+    width: 20px; /* Ancho del círculo */
+    height: 20px; /* Altura del círculo */
+    border-radius: 50%; /* Hace que el elemento sea circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px; /* Tamaño de la fuente del contador */
+    font-weight: bold; /* Negrita para destacar el número */
+}
